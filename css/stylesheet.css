@@ -1,0 +1,284 @@
+
+/* open-sans-regular - latin */
+/* 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('../fonts/open-sans-v17-latin-regular.woff2') format('woff2'), 
+       url('../fonts/open-sans-v17-latin-regular.woff') format('woff'); 
+} */
+
+/* source-sans-pro-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+       url('../fonts/source-sans-pro-v13-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/source-sans-pro-v13-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* fjalla-one-regular - latin */
+@font-face {
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fjalla One'), local('FjallaOne-Regular'),
+       url('../fonts/fjalla-one-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/fjalla-one-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+body{
+  font-family: 'Source Sans Pro', sans-serif ;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Fjalla One',  sans-serif;
+  font-weight: normal;
+  /* font-style: italic; */
+}
+h1{
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+  color: white;
+  margin: 0;
+  /* text-transform: uppercase; */
+  /* text-decoration: dashed; */
+}
+h1 strong{
+  color:#026fff;
+}
+h2{
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif ;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.hero{
+  height: 300px;
+  /* background-image: url(../images/Link.jpg); */
+  /* background-size: 500px 300px; */
+  /* background-repeat: no-repeat; */
+  /* background-position: right; */
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* overflow: hidden; */
+}
+.hero-image{
+  object-fit: cover;
+}
+.portfolio{
+  background-color: #fafafa;
+  padding: 20px;
+  /* background: red; */
+}
+.project{
+  background-color: white;
+  /* margin: 10px; */
+  margin-bottom: 15px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.project-course,
+.project-date,
+.project-url{
+  margin: 10px 0;
+}
+.project-description{
+  font-size: 20px;
+}
+.project strong{
+  font-family: 'Fjalla One',  sans-serif;
+}
+.project-tittle{
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.project-details{
+  width: 500px;
+}
+.project-image{
+  border-radius: 10px;
+}
+.project-imageContainer{
+  width: 500px;
+}
+.header {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+ol,
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+figure{
+  margin: 0;
+}
+.header a{
+  color: white;
+  text-decoration: none;
+
+}
+.menu{
+  height: inherit;
+}.menu ol{
+  display: flex;
+  height: inherit;
+}
+.menu li{
+  display: flex;
+  height: inherit;
+}
+.menu li a{
+  display: flex;
+  height: inherit;
+  align-items: center;
+  padding: 0 10px;
+}
+.footer{
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer img{
+  /* vertical-align: middle; */
+}
+.footer a{
+  /* text-decoration:none; */
+  color: white;
+}
+.event-list{
+  /* flex-wrap: wrap; */
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+}
+.event-list-tittle{
+  margin-left: 20px;
+}
+.event{
+  /* display: flex; */
+  /* border:1px solid red; */
+  margin: 10px;
+  width: 480px;
+  overflow: hidden;
+  border-radius: 10px;
+  flex-shrink: 0;
+  background-color: #f4fbff;
+}
+/* .event figure{
+  width: inherit;
+} */
+.event img{
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+  
+}
+.event-detail{
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  text-align: center;
+
+}
+.event-description{
+  text-align: left;
+}
+.event-url{
+  color: #056fff;
+  border:1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.contact{
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social{
+  display: flex;
+  /* border: 1px solid red; */
+}
+.social-link{
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: right;
+  /* align-items: center; */
+  width: 50px;
+  height: 50px;
+  /* border: 1px solid white; */
+}
+.form-email input{
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 5px 20px 5px 25px;
+  background-image: url(../images/envelope.svg);
+  background-size: 15px 15px;
+  /* background-color: white; */
+  background-repeat: no-repeat;
+  background-position-y:center;
+  background-position-x: 5px ;
+}
+.form-email button{
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: white ;  
+}
+.form-email button:hover{
+  cursor: pointer;
+}
+.form-email h3{
+  font-family: 'Source Sans Pro', sans-serif ;
+  /* font-weight: 500; */
+}
+.Container{
+  /* border: 1px solid red; */
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
