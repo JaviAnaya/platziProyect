@@ -114,13 +114,16 @@ h2{
   margin-bottom: 10px;
 }
 .project-details{
-  width: 500px;
+  width: 50%;
 }
 .project-image{
   border-radius: 10px;
 }
 .project-imageContainer{
-  width: 500px;
+  width: 50%;
+}
+.project-imageContainer img{
+  max-width: 100%;
 }
 .header {
   background-color: #1b2127;
@@ -290,7 +293,7 @@ figure{
   flex-wrap: inherit;
 }
 /* destok first que empiences desde el mq mas grande */
-@media screen and(max-width 1024px){
+@media screen and (max-width 1024px){
 
 }
 @media screen and (max-width:767px)
@@ -313,10 +316,41 @@ figure{
 .header .logo{
   text-align: center;
 }
+.project{
+  display: block;
+}
+.project-imageContainer{
+  width: auto;
+  text-align: center;
+}
+
+.project-details{
+  width: auto;
+  /* font-size: 10px; */
+}
+.project-course, .project-date, .project-url{
+  margin: .3em 0;
+}
+.project-tittle{
+  font-size: 1.5em;
+  margin-bottom: .3em;
+}
+.project-url{
+  font-size: 1em;
+}
+.project-course{
+  font-size: 1.7em;
+}
+.project-description{
+  font-size: .8em;
+}
 }
 @media screen and (max-width 480px){
-
+  .project-details{
+    width: auto;
+    font-size: 12px;
+  }
 }
-@media screen and(max-width 320px){
+@media screen and (max-width 320px){
 
 }
