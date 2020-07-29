@@ -192,8 +192,8 @@ figure{
 .event{
   /* display: flex; */
   /* border:1px solid red; */
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   overflow: hidden;
   border-radius: 10px;
   flex-shrink: 0;
@@ -293,7 +293,7 @@ figure{
   flex-wrap: inherit;
 }
 /* destok first que empiences desde el mq mas grande */
-@media screen and (max-width 1024px){
+@media screen and (max-width:1024px){
 
 }
 @media screen and (max-width:767px)
@@ -307,7 +307,7 @@ figure{
 }
 .header ol li{
   height: 50px;
-  /* text-align: center; */
+  text-align: center;
   display: initial;
 }
 .header a {
@@ -326,7 +326,7 @@ figure{
 
 .project-details{
   width: auto;
-  /* font-size: 10px; */
+  font-size: 10px;
 }
 .project-course, .project-date, .project-url{
   margin: .3em 0;
@@ -344,13 +344,24 @@ figure{
 .project-description{
   font-size: .8em;
 }
+.event{
+  width: auto;
+  flex-shrink: initial;
 }
-@media screen and (max-width 480px){
+.event img{
+  width: 100%;
+}
+.event-detail{
+  margin:-2em .5em 5em;
+  padding: 1em;
+}
+} 
+@media screen and (max-width: 480px){
   .project-details{
     width: auto;
     font-size: 12px;
   }
 }
-@media screen and (max-width 320px){
+@media screen and (max-width: 320px){
 
 }
