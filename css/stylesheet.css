@@ -292,6 +292,21 @@ figure{
   height: inherit;
   flex-wrap: inherit;
 }
+.burguer-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0 , 0,0, .8);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top:5px;
+  color: white;
+  
+}
 /* destok first que empiences desde el mq mas grande */
 @media screen and (max-width:1024px){
   .Container{
@@ -323,6 +338,9 @@ figure{
 }
 @media screen and (max-width:767px)
 {
+  .burguer-button{
+    display: block;
+  }
   .hero{
     height: auto;
     position: relative;
@@ -357,9 +375,31 @@ figure{
 }
 .header a {
   justify-content: center;
+  height: 40px;
+  font-size: 2em;
+  text-decoration: underline;
+  margin-bottom: .5em;
 }
 .header .logo{
   text-align: center;
+}
+.menu{
+  position: fixed;
+  background: rgba(5, 111, 255,.9);
+  z-index: 3;
+  top: 0;
+  left: -100vw;
+  bottom: 0;
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+.menu.is-active{
+  left: 0;
+
 }
 .project{
   display: block;
