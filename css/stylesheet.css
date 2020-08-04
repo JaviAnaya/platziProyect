@@ -30,7 +30,7 @@
        url('../fonts/fjalla-one-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 body{
-  font-family: 'Source Sans Pro', sans-serif ;
+  font-family: 'Source Sans Pro', system-ui;
   margin: 0;
 }
 h1,
@@ -39,7 +39,7 @@ h3,
 h4,
 h5,
 h6{
-  font-family: 'Fjalla One',  sans-serif;
+  font-family: 'Fjalla One',  system-ui;
   font-weight: normal;
   /* font-style: italic; */
 }
@@ -49,6 +49,7 @@ h1{
   letter-spacing: -.2px;
   color: white;
   margin: 0;
+  max-width: 500px;
   /* text-transform: uppercase; */
   /* text-decoration: dashed; */
 }
@@ -58,7 +59,7 @@ h1 strong{
 h2{
   color: #026fff;
   text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif ;
+  font-family: 'Source Sans Pro', system-ui ;
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 40px;
@@ -106,7 +107,7 @@ h2{
   font-size: 20px;
 }
 .project strong{
-  font-family: 'Fjalla One',  sans-serif;
+  font-family: 'Fjalla One',  system-ui;
 }
 .project-tittle{
   font-size: 30px;
@@ -277,7 +278,7 @@ figure{
   cursor: pointer;
 }
 .form-email h3{
-  font-family: 'Source Sans Pro', sans-serif ;
+  font-family: 'Source Sans Pro', system-ui ;
   /* font-weight: 500; */
 }
 .Container{
