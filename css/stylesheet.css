@@ -227,8 +227,8 @@ figure{
   border-radius: 5px;
 }
 .contact{
-  background-color: #056fff;
   color: white;
+  background-color: #056fff;
   height: 150px;
   display: flex;
   align-items: center;
@@ -327,7 +327,13 @@ figure{
   height: auto;
 }
 /* destok first que empiences desde el mq mas grande */
-@media screen and (max-width:1024px){
+@media screen and (max-width:1023px){
+  .event-list-tittle{
+    margin-left: 0;
+  }
+  .portfolio{
+    padding:0;
+  }
   .Container{
     padding: 0 1em;
   }
@@ -357,6 +363,10 @@ figure{
 }
 @media screen and (max-width:767px)
 {
+  h2{
+    font-size: 1.05em;
+    margin: .5em 0;
+  }
   .burguer-button{
     display: block;
   }
@@ -443,10 +453,10 @@ figure{
   font-size: 1em;
 }
 .project-course{
-  font-size: 1.7em;
+  font-size: .7em;
 }
 .project-description{
-  font-size: .8em;
+  font-size: 1em;
 }
 .event{
   /* width: auto; */
@@ -466,7 +476,7 @@ figure{
   }
   .project-details{
     width: auto;
-    font-size: 12px;
+    font-size: 14px;
   }
   .event{
     width: auto;
