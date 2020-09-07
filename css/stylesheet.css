@@ -31,7 +31,7 @@
 }
 body{
   font-family: 'Source Sans Pro', system-ui;
-  margin: 0;
+  display: inline;
 }
 h1,
 h2,
@@ -42,6 +42,7 @@ h6{
   font-family: 'Fjalla One',  system-ui;
   font-weight: normal;
   /* font-style: italic; */
+  justify-content: space-evenly;
 }
 h1{
   font-size: 40px;
